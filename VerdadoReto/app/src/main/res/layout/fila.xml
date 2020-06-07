@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fila"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_red_light"
+    android:divider="@android:color/background_dark"
+    android:gravity="fill_horizontal|center_vertical"
+    android:onClick="generar">
+
+    <ToggleButton
+        android:id="@+id/Genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight=".25"
+        android:checked="false"
+        android:textOff="Hombre"
+        android:textOn="Mujer" />
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".75"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="fill"
+        android:hint="Ingresa el nombre"
+        android:inputType="textPersonName|textCapWords"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</TableRow>
