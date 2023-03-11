@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#334A7A">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/yrsa_light"
+        android:gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:text="Elige la intensidad del juego"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/fuegovsagua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/Sutil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:onClick="sutil"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/guino"
+                android:clickable="false"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight=".3"
+                android:clickable="false"
+                android:fontFamily="@font/yrsa_light"
+                android:text="Suave"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Sensual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="sensual">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/emojilentes"
+                android:clickable="false"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight=".3"
+                android:clickable="false"
+                android:fontFamily="@font/yrsa_light"
+                android:text="Moderado"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Atrevido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="atrevido">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/emojiomg"
+                android:clickable="false"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight=".3"
+                android:clickable="false"
+                android:fontFamily="@font/yrsa_light"
+                android:text="Atrevido"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Sinlimites"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".25"
+            android:onClick="sinLimites">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/diablito"
+                android:clickable="false"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight=".3"
+                android:clickable="false"
+                android:fontFamily="@font/yrsa_light"
+                android:text="Sin limites"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

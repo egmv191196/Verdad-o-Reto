@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:gravity="center"
+        android:scrollbarSize="10sp"
+        android:text="Ingresa los jugadores"
+        android:textAlignment="center"
+        android:textColor="#0E0909"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/agregarjugador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tabla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerPadding="2dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/agregarjugador"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/holo_green_light"
+        android:fontFamily="sans-serif"
+        android:onClick="crear"
+        android:text="Agregar "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Eliminarjugador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Eliminarjugador"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="1dp"
+        android:background="#F11919"
+        android:fontFamily="sans-serif"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Comenzar"
+        app:layout_constraintStart_toEndOf="@+id/agregarjugador" />
+
+    <Button
+        android:id="@+id/Comenzar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="sans-serif"
+        android:onClick="comenzar"
+        android:text="Comenzar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Eliminarjugador" />
+
+</android.support.constraint.ConstraintLayout>
